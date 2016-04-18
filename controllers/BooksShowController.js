@@ -1,5 +1,5 @@
 angular.module('libraryApp')
-  .controller('BooksIndexController', BooksIndexController);
+       .controller('BooksShowController', BooksShowController);
 
 var apiEndPoint = 'https://super-crud.herokuapp.com/books';
 
