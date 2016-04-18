@@ -3,11 +3,10 @@ angular
   .controller('BooksIndexController', BooksIndexController);
 
 BooksIndexController.$inject=['$http'];
-
-function BooksIndexController($http) {
+function BooksIndexController( $http ) {
   var vm = this;
-
-
+  console.log(vm.books);
+  vm.books = [];
   var apiEndPoint = 'https://super-crud.herokuapp.com/books';
 
   $http({
